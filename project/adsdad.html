@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Özel CSS stilleri */
+        .bg-custom {
+            background-color: #f8f9fa;
+        }
+/* Özel CSS Animasyonları ve Stilleri */
+
+/* Navbar'daki hover efekti */
+.navbar-nav .nav-item .nav-link {
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #f8f9fa; /* Rengi değiştirin */
+}
+
+/* Header'daki başlık animasyonu */
+.jumbotron h1 {
+    animation: slide-up 1s ease-out;
+}
+.jumbotron p{
+    animation: slide-up 1.2s ease-out;
+
+}
+
+
+
+@keyframes slide-up {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Hizmet kartlarındaki hover efekti */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+
+/* Ekibimiz kartlarındaki giriş animasyonu */
+#team .card {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fade-in 1s ease-out forwards;
+}
+
+@keyframes fade-in {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* İletişim formu butonu animasyonu */
+#contact button {
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+#contact button:hover {
+    background-color: #007bff; /* Renk değiştirin */
+    color: #fff;
+}
+body{
+
+    background-color: #cfd8e6;
+}
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Logo</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Hizmetler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Ekibimiz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">İletişim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Paketlerimiz</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="jumbotron jumbotron-fluid text-center text-white bg-primary">
+        <div class="container">
+            <h1 class="display-4">Hoş Geldiniz!</h1>
+            <p> Dijital Pazarlama Merkezi</p>
+        </div>
+    </header>
+
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="mb-4">Hakkımızda</h2>
+                    <p>Website tasarımı yapmak amacıyla kurulan bir şirkettir.Müşterilerimize güzel ve göz alıcı siteler yapmak için buradayız!</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="webb1.jpg" class="img-fluid" alt="Hakkımızda Resmi">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="bg-custom py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Hizmetlerimiz</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="725.jpg"width="250px">
+                            <p class="card-text">7/24 aktif olmak çok önemlidir. Müşteriye tam teslimat ve hızlıca teslim etmek için hazırız!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="res3.png"width="347px">
+                            <p class="card-text">Tamamen basit ve özgün bir webiste tasarımı sunmaktayız.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="para.jpg"width="310px"height="250px">
+                            <p class="card-text">Düşük bütçeli bir tasarım ile cep dostu bir tasrım sizlerle!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Ekibimiz</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="üye1.jpg" class="card-img-top" alt="Ekibimiz Üye 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Selim</h5>
+                            <p class="card-text">Tasarım alanında çok başarılı!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="üye2.jpg" class="card-img-top" alt="Ekibimiz Üye 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Ayça</h5>
+                            <p class="card-text">Düzenlemeyi en iyi bilenlerden birisi!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="üye1.jpg" class="card-img-top" alt="Ekibimiz Üye 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Murat</h5>
+                            <p class="card-text">Göz için en iyi rengi o bilir!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="bg-custom py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Paketlerimiz</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="satin.jpg"width="310px">
+                          <div style="text-align: center;">
+                            <p class="card-text"><h3> TEMEL PAKET</h3> <p>Basit çok fazla ayrıntıya girmeden sadece hazırlanmış websitesi tasarımı.</p> <del>$1499</del> <br><b>$1000</b></br></p>
+                            <button type="button" class="btn btn-outline-dark">Satın Al!</button>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="satin.jpg"width="310px">
+                            <div style="text-align: center;">
+                                <p class="card-text"><h3> HIZLANDIRILMIŞ</h3> <p>Çoğu özellik eklenmiş güzel tasarım sunan bir paket.</p> <del>$2499</del> <br><b>$1999</b></br></p>
+                            <button type="button" class="btn btn-outline-dark">Satın Al!</button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="satin.jpg"width="310px">
+                            <div style="text-align: center;">
+                                <p class="card-text"><h3> PROFESYONEL</h3> <p>Tüm sayfayı tüm ayrıntılarıyla tasarlayıp kullanıcıya hazır şekilde veren bir paket.</p> <del>$3999</del> <br><b>$2999</b></br></p>
+                            <button type="button" class="btn btn-outline-dark">Satın Al!</button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">İletişim</h2>
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Adınız</label>
+                            <input type="text" class="form-control" id="name" placeholder="Adınızı girin">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-posta Adresiniz</label>
+                            <input type="email" class="form-control" id="email" placeholder="E-posta adresinizi girin">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mesajınız</label>
+                            <textarea class="form-control" id="message" rows="3"
+                                placeholder="Mesajınızı buraya yazın"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Gönder</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS ve jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ 
+</body>
+<footer class="bg-dark text-white text-center py-1">
+    <p>Tüm hakları saklıdır &copy; 2023</p>
+</footer>
+</html>
